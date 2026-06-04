@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, X, CalendarCheck, CircleDot } from 'lucide-react'
-import ToothMark from './ToothMark.jsx'
 import { getStatusHariIni } from '../lib/jadwal.js'
 
 const navItems = [
@@ -42,9 +41,11 @@ export default function Navbar() {
       <nav className="container-px flex h-[68px] items-center justify-between gap-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2.5 text-primary">
-          <span className="grid h-10 w-10 place-items-center rounded-xl bg-primary text-white shadow-soft">
-            <ToothMark className="h-5 w-5" />
-          </span>
+          <img
+            src="/images/logo.png"
+            alt="Logo Praktek Dokter Gigi drg. Rochmad Koesbiantoro"
+            className="h-11 w-11 object-contain"
+          />
           <span className="flex flex-col leading-tight">
             <span className="font-serif text-lg text-primary">drg. Rochmad K.</span>
             <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-muted">

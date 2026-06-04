@@ -54,10 +54,13 @@ export default function Kontak() {
                     <Phone className="h-5 w-5" />
                   </span>
                   <div>
-                    <div className="font-semibold text-ink">Telepon / WhatsApp</div>
+                    <div className="font-semibold text-ink">Reservasi &amp; Informasi (WhatsApp)</div>
                     <a href={`tel:${INFO.telpDial}`} className="text-sm text-muted hover:text-primary">
                       {INFO.telpDisplayLocal}
                     </a>
+                    <p className="text-xs text-muted">
+                      {INFO.contactName} — {INFO.contactRole}
+                    </p>
                   </div>
                 </li>
                 <li className="flex gap-4">
@@ -82,7 +85,7 @@ export default function Kontak() {
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a
-                  href={waLink(`Halo ${INFO.dokterShort}, saya ingin bertanya.`)}
+                  href={waLink(`${INFO.waSalam}, saya ingin bertanya.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-whatsapp"

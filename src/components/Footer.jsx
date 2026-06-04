@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Clock, MessageCircle } from 'lucide-react'
-import ToothMark from './ToothMark.jsx'
 import { INFO, waLink } from '../lib/info.js'
 
 export default function Footer() {
@@ -12,8 +11,12 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2.5">
-            <span className="grid h-10 w-10 place-items-center rounded-xl bg-white/10 text-white">
-              <ToothMark className="h-5 w-5" />
+            <span className="grid h-11 w-11 place-items-center rounded-xl bg-white p-1 shadow-soft">
+              <img
+                src="/images/logo.png"
+                alt="Logo Praktek Dokter Gigi drg. Rochmad Koesbiantoro"
+                className="h-full w-full object-contain"
+              />
             </span>
             <span className="font-serif text-xl text-white">Praktek drg. Rochmad K.</span>
           </div>
@@ -64,7 +67,7 @@ export default function Footer() {
             </li>
           </ul>
           <a
-            href={waLink('Halo drg. Rochmad, saya ingin bertanya seputar layanan praktek.')}
+            href={waLink(`${INFO.waSalam}, saya ingin bertanya seputar layanan praktek.`)}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-whatsapp mt-5 px-5 py-2.5"

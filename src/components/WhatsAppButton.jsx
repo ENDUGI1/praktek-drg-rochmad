@@ -24,7 +24,7 @@ export default function WhatsAppButton() {
 
   return (
     <a
-      href={waLink(`Halo ${INFO.dokterShort}, saya ingin bertanya seputar layanan praktek.`)}
+      href={waLink(`${INFO.waSalam}, saya ingin bertanya seputar layanan praktek.`)}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat dokter via WhatsApp"

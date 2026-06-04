@@ -52,7 +52,7 @@ export default function Reservasi() {
   }
 
   const buildMessage = () =>
-    `Halo ${INFO.dokterShort} 🦷\n\n` +
+    `${INFO.waSalam} 🦷\n\n` +
     `Saya ingin membuat janji pemeriksaan:\n\n` +
     `👤 DATA PASIEN\n` +
     `• Nama     : ${form.nama}\n` +
@@ -60,7 +60,7 @@ export default function Reservasi() {
     `• Layanan  : ${form.layanan || 'Belum ditentukan'}\n` +
     `• Hari     : ${form.hari}\n\n` +
     `📝 Keluhan: ${form.catatan || '-'}\n\n` +
-    `Mohon konfirmasinya. Terima kasih dok 🙏`
+    `Mohon konfirmasinya. Terima kasih 🙏`
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -108,8 +108,9 @@ export default function Reservasi() {
             Pesan WhatsApp Sudah Disiapkan!
           </h1>
           <p className="mt-3 text-muted">
-            Silakan kirim pesan tersebut dan tunggu konfirmasi dari {INFO.dokterShort}.
-            Jika tab WhatsApp tidak terbuka otomatis, gunakan tombol di bawah.
+            Silakan kirim pesan tersebut dan tunggu konfirmasi dari admin kami
+            ({INFO.contactName}). Jika tab WhatsApp tidak terbuka otomatis, gunakan
+            tombol di bawah.
           </p>
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <a
@@ -148,7 +149,10 @@ export default function Reservasi() {
           <div className="flex gap-3 rounded-2xl border border-secondary/20 bg-soft/60 p-4 text-sm text-ink/80">
             <Info className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
             <div className="space-y-1">
-              <p>Reservasi dikonfirmasi via WhatsApp.</p>
+              <p>
+                Reservasi dikonfirmasi via WhatsApp oleh admin kami,{' '}
+                <strong className="text-primary">{INFO.contactName}</strong> ({INFO.telpDisplayLocal}).
+              </p>
               <p>Jam Praktek: <strong className="text-primary">Senin–Sabtu, 19.00–22.00 WITA</strong>.</p>
               <p>Harap datang 10 menit sebelum waktu yang disepakati.</p>
             </div>

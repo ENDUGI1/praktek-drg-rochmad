@@ -302,10 +302,13 @@ export default function Home() {
                   <Phone className="h-5 w-5" />
                 </span>
                 <div>
-                  <div className="font-semibold text-ink">Telepon / WhatsApp</div>
+                  <div className="font-semibold text-ink">Reservasi (WhatsApp)</div>
                   <a href={`tel:${INFO.telpDial}`} className="text-sm text-muted hover:text-primary">
                     {INFO.telpDisplayLocal}
                   </a>
+                  <p className="text-xs text-muted">
+                    {INFO.contactName} — {INFO.contactRole}
+                  </p>
                 </div>
               </li>
               <li className="flex gap-4">
@@ -359,7 +362,7 @@ export default function Home() {
               penanganan terbaik dari {INFO.dokterShort}.
             </p>
             <a
-              href={waLink(`Halo ${INFO.dokterShort}, saya ingin konsultasi masalah gigi.`)}
+              href={waLink(`${INFO.waSalam}, saya ingin konsultasi masalah gigi.`)}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp mt-8 px-8 py-4 text-base"
