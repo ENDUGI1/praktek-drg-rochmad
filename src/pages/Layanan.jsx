@@ -36,8 +36,8 @@ export default function Layanan() {
             ))}
           </div>
           <Reveal className="mt-8 text-center text-xs text-muted">
-            * Harga bersifat estimasi dan masih perlu dikonfirmasi. Biaya final
-            ditentukan setelah pemeriksaan.
+            Untuk informasi biaya perawatan, silakan tanyakan langsung via WhatsApp
+            saat membuat janji.
           </Reveal>
         </div>
       </section>

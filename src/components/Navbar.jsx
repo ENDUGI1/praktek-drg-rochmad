@@ -33,10 +33,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 border-b backdrop-blur-md transition-all duration-300 ${
         scrolled
-          ? 'border-b border-primary/10 bg-bg/85 backdrop-blur-md shadow-soft'
-          : 'bg-transparent'
+          ? 'border-primary/10 bg-bg/90 shadow-soft'
+          : 'border-primary/5 bg-bg/80'
       }`}
     >
       <nav className="container-px flex h-[68px] items-center justify-between gap-4">

@@ -45,24 +45,19 @@ export default function ServiceCard({ service, detailed = false }) {
         {detailed ? service.descLong : service.desc}
       </p>
 
-      <div className="mt-5 flex items-end justify-between gap-3 border-t border-primary/10 pt-4">
-        <div>
-          <span className="block text-[11px] font-semibold uppercase tracking-wide text-muted">
-            Estimasi Biaya
-          </span>
-          <span className="font-serif text-lg text-primary">{service.price}</span>
-          {/* TODO: harga belum dikonfirmasi ke klien */}
-        </div>
-        {detailed && (
+      {/* Harga TIDAK ditampilkan (permintaan klien). Data harga tetap ada di
+          services.js bila kelak dibutuhkan. */}
+      {detailed && (
+        <div className="mt-5 border-t border-primary/10 pt-4">
           <Link
             to={`/reservasi?layanan=${encodeURIComponent(service.name)}`}
             className="inline-flex items-center gap-1.5 rounded-full bg-soft px-3.5 py-2 text-xs font-bold text-primary transition-colors hover:bg-accent hover:text-primary"
           >
-            Buat Janji
+            Buat Janji untuk Layanan Ini
             <ArrowRight className="h-3.5 w-3.5" />
           </Link>
-        )}
-      </div>
+        </div>
+      )}
     </article>
   )
 }

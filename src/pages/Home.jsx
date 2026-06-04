@@ -203,8 +203,7 @@ export default function Home() {
               <ArrowRight className="h-4 w-4" />
             </Link>
             <p className="mt-4 text-xs text-muted">
-              * Harga bersifat estimasi dan masih perlu dikonfirmasi. Biaya final
-              ditentukan setelah pemeriksaan.
+              Untuk informasi biaya perawatan, silakan tanyakan langsung via WhatsApp.
             </p>
           </Reveal>
         </div>

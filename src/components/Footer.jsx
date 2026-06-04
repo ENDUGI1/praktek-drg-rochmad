@@ -78,7 +78,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-px flex flex-col gap-2 py-6 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            Harga layanan bersifat estimasi. Biaya final ditentukan setelah pemeriksaan.
+            Informasi biaya perawatan dapat ditanyakan langsung via WhatsApp.
           </p>
           <p>© {year} {INFO.dokter}</p>
         </div>
