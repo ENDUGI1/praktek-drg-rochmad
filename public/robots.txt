@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: ganti URL bila domain final berbeda dari Vercel default.
+Sitemap: https://praktek-drg-rochmad.vercel.app/sitemap.xml

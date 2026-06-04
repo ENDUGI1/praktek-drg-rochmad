@@ -8,6 +8,37 @@
       name="description"
       content="Praktek Dokter Gigi drg. Rochmad Koesbiantoro, M.Kes di Ruko Alaya Junction, Samarinda. Buka Senin–Sabtu 19.00–22.00 WITA. Reservasi mudah via WhatsApp."
     />
+    <meta
+      name="keywords"
+      content="dokter gigi Samarinda, drg Rochmad, praktek gigi Sungai Pinang, scaling, tambal gigi, cabut gigi, dokter gigi Alaya Junction"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ============================================================
+         SEO: ganti SEMUA URL di bawah ini bila domain final berbeda.
+         Default memakai URL Vercel: https://praktek-drg-rochmad.vercel.app
+         (juga ubah di public/robots.txt dan public/sitemap.xml)
+         ============================================================ -->
+    <link rel="canonical" href="https://praktek-drg-rochmad.vercel.app/" />
+
+    <!-- Open Graph (preview saat dibagikan di WhatsApp / Facebook) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Praktek drg. Rochmad Koesbiantoro, M.Kes" />
+    <meta
+      property="og:title"
+      content="drg. Rochmad Koesbiantoro, M.Kes — Praktek Dokter Gigi Samarinda"
+    />
+    <meta
+      property="og:description"
+      content="Praktek Dokter Gigi di Ruko Alaya Junction, Samarinda. Buka Senin–Sabtu 19.00–22.00 WITA. Reservasi mudah via WhatsApp."
+    />
+    <meta property="og:url" content="https://praktek-drg-rochmad.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://praktek-drg-rochmad.vercel.app/images/hero-klinik.jpg"
+    />
+    <meta property="og:locale" content="id_ID" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Google Fonts: DM Serif Display (heading) + Plus Jakarta Sans (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,6 +49,36 @@
     />
 
     <title>drg. Rochmad Koesbiantoro, M.Kes — Praktek Dokter Gigi Samarinda</title>
+
+    <!-- Data terstruktur: membantu Google mengenali ini sebagai praktek
+         dokter gigi (Local SEO). TODO: lengkapi geo & sameAs bila tersedia. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "drg. Rochmad Koesbiantoro, M.Kes",
+        "description": "Praktek Dokter Gigi pribadi di Samarinda. Pemeriksaan, scaling, tambal, cabut gigi, dan perawatan saluran akar.",
+        "image": "https://praktek-drg-rochmad.vercel.app/images/hero-klinik.jpg",
+        "url": "https://praktek-drg-rochmad.vercel.app/",
+        "telephone": "+6281346249889",
+        "medicalSpecialty": "Dentistry",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ruko Alaya Junction, Jl. Bukit Alaya, Sungai Pinang Dalam, Kec. Sungai Pinang",
+          "addressLocality": "Samarinda",
+          "addressRegion": "Kalimantan Timur",
+          "addressCountry": "ID"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "19:00",
+            "closes": "22:00"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
